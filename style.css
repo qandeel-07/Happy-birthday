@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #e9e6df;
+    color: #292b27;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+    background: #f7f5ef;
+    padding: 55px;
+    border: 1px solid #d8d4ca;
+    border-radius: 8px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.06);
+}
+
+.top-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #858276;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+
+.screen {
+    display: none;
+    animation: appear 0.5s ease;
+}
+
+.screen.active {
+    display: block;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.small-text {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #858276;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    line-height: 1.4;
+    margin: 25px 0 15px;
+}
+
+.description {
+    color: #77776f;
+    font-size: 14px;
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #d8d4ca;
+    margin: 30px 0;
+}
+
+button {
+    border: none;
+    padding: 16px 20px;
+    background: #292d28;
+    color: #f7f5ef;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: #555b50;
+    transform: translateY(-2px);
+}
+
+.button-area {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+#no-btn {
+    background: #e5e1d8;
+    color: #292b27;
+}
+
+#no-message {
+    color: #92745e;
+    font-size: 12px;
+    margin-top: 15px;
+    min-height: 18px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 100%;
+    background: #e2ded5;
+    margin: 10px 0 35px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: #626d5d;
+    transition: width 0.4s ease;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.option-btn {
+    width: 100%;
+    background: transparent;
+    color: #292b27;
+    border: 1px solid #d8d4ca;
+    text-align: left;
+    letter-spacing: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.option-btn:hover {
+    background: #eae7de;
+    border-color: #929487;
+    color: #292b27;
+}
+
+.option-btn.selected {
+    background: #e4e8df;
+    border-color: #626d5d;
+}
+
+#feedback {
+    min-height: 45px;
+    margin: 20px 0;
+    color: #77776f;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.report {
+    background: #eeece5;
+    padding: 22px;
+    margin: 25px 0;
+    border-left: 3px solid #858f7c;
+}
+
+.report p {
+    font-size: 13px;
+    color: #66675f;
+    margin: 12px 0;
+}
+
+.birthday-message {
+    margin: 20px 0 35px;
+}
+
+.footer-text {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #99968b;
+    margin-top: 45px;
+    line-height: 1.8;
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 30px 23px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .top-label {
+        margin-bottom: 40px;
+    }
+
+    .question-header {
+        flex-direction: column;
+    }
+}

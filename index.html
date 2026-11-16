@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Birthday Interrogation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="top-label">A SPECIAL INVESTIGATION</div>
+
+        <!-- WELCOME SCREEN -->
+        <section id="welcome-screen" class="screen active">
+
+            <p class="small-text">CASE NO. 001 / 2026</p>
+
+            <h1>The Birthday<br>Interrogation.</h1>
+
+            <p class="description">
+                An unnecessarily serious investigation
+                into a very ordinary birthday.
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="small-text">ESTIMATED TIME: 2 MINUTES</p>
+
+            <div class="button-area" id="welcome-buttons">
+                <button id="start-btn">YES, LET'S GO →</button>
+                <button id="no-btn">NO</button>
+            </div>
+
+            <p id="no-message"></p>
+
+            <p class="footer-text">
+                CONFIDENTIAL · STRICTLY UNNECESSARY
+            </p>
+
+        </section>
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="screen">
+
+            <div class="question-header">
+                <p id="question-number" class="small-text">
+                    QUESTION 01
+                </p>
+                <p id="question-category" class="small-text">
+                    FRIENDSHIP DEPARTMENT
+                </p>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <h2 id="question-text"></h2>
+
+            <p id="question-subtitle" class="description"></p>
+
+            <div id="options-container"></div>
+
+            <p id="feedback"></p>
+
+            <button id="next-btn" class="hidden">
+                NEXT QUESTION →
+            </button>
+
+        </section>
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="screen">
+
+            <p class="small-text">INVESTIGATION COMPLETE</p>
+
+            <h1>Well, look<br>who made it.</h1>
+
+            <p class="description">
+                After careful consideration and absolutely
+                no scientific research...
+            </p>
+
+            <div class="divider"></div>
+
+            <h2>YOUR OFFICIAL REPORT</h2>
+
+            <div class="report">
+                <p>PF survival instincts: questionable.</p>
+                <p>Friendship loyalty: under investigation.</p>
+                <p>Decision-making: interesting.</p>
+                <p>Birthday attitude: needs improvement.</p>
+            </div>
+
+            <button id="reveal-btn">
+                ONE LAST THING →
+            </button>
+
+        </section>
+
+        <!-- BIRTHDAY MESSAGE -->
+        <section id="message-screen" class="screen">
+
+            <p class="small-text">THE ACTUAL REASON YOU'RE HERE</p>
+
+            <h1>Oh, and...</h1>
+
+            <div class="divider"></div>
+
+            <h2>HAPPY BIRTHDAY! 🎂</h2>
+
+            <p class="description birthday-message">
+                To Junaid Hashmi Sahab!!
+                I know birthdays aren't really your thing,
+                so I won't make a big deal out of it.
+
+                Just wanted to do something a little different
+                and special. Wish you a genuinely good year ahead.
+
+                May life surprise you in the nicest ways,
+                bring you unexpected opportunities and give
+                you plenty of reasons to smile.
+
+                Happiest Birthday Once Again.
+            </p>
+
+            <p class="footer-text">
+                END OF INVESTIGATION. HAVE A GOOD ONE!
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
